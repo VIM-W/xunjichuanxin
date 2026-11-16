@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="循迹·传薪党史学习网站，提供红色溯源、历史时间轴、长征专题、基地分布和红色资讯。"
+    />
+    <title>循迹·传薪 | 党史学习资源平台</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="utility-bar">
+        <div class="utility-bar__inner container">
+          <span>循迹·传薪 · 党史学习资源平台</span>
+          <span class="utility-bar__slogan">学党史 · 悟思想 · 办实事 · 开新局</span>
+        </div>
+      </div>
+
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="index.html" aria-label="循迹·传薪首页">
+          <span class="brand__text">循迹·传薪</span>
+        </a>
+
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">首页</a></li>
+          <li><a class="nav__link" href="red-origin.html">红色溯源</a></li>
+          <li><a class="nav__link" href="timeline.html">历史时间轴</a></li>
+          <li><a class="nav__link" href="long-march.html">长征专题</a></li>
+          <li><a class="nav__link" href="bases.html">基地分布</a></li>
+          <li><a class="nav__link" href="news.html">红色资讯</a></li>
+        </ul>
+
+        <div class="search-shell" data-search>
+          <form class="search-form" role="search" data-search-form>
+            <label class="sr-only" for="site-search">搜索党史相关内容</label>
+            <input
+              class="search-input"
+              id="site-search"
+              name="keyword"
+              type="search"
+              placeholder="搜索党史内容"
+              autocomplete="off"
+            />
+            <button class="search-button" type="submit" aria-label="搜索">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="search-results" data-search-results hidden>
+            <p class="search-results__summary" data-search-summary aria-live="polite"></p>
+            <ul class="search-results__list" data-search-list></ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="subnav" data-subnav>
+        <div class="subnav__inner container">
+          <a class="subnav__link" href="#featured" aria-current="location">本站头条</a>
+          <a class="subnav__link" href="#numbers">长征数据</a>
+          <a class="subnav__link" href="#news">要闻动态</a>
+          <a class="subnav__link" href="#learning">学习专栏</a>
+          <a class="subnav__link" href="#topics">专题集锦</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="home-banner" id="featured">
+        <div class="home-banner__stage">
+          <div class="hero-carousel" data-hero-carousel aria-label="红色主题照片轮播">
+            <figure class="hero-carousel__slide is-active" data-carousel-slide data-source="来源：Pexels">
+              <img
+                src="images/banner1.jpg"
+                alt="红色主题横幅照片 1"
+                decoding="async"
+                fetchpriority="high"
+                data-carousel-image
+              />
+            </figure>
+            <figure class="hero-carousel__slide" data-carousel-slide data-source="来源：Pexels">
+              <img
+                src="images/banner2.jpg"
+                alt="红色主题横幅照片 2"
+                decoding="async"
+                data-carousel-image
+              />
+            </figure>
+            <figure class="hero-carousel__slide" data-carousel-slide data-source="来源：宁夏博物馆《红旗漫卷》群雕" data-source-long>
+              <img
+                src="images/banner3.jpg"
+                alt="红色主题横幅照片 3"
+                decoding="async"
+                data-carousel-image
+              />
+            </figure>
+            <figure class="hero-carousel__slide" data-carousel-slide data-source="来源：新华社">
+              <img
+                src="images/banner4.jpg"
+                alt="红色主题横幅照片 4"
+                decoding="async"
+                data-carousel-image
+              />
+            </figure>
+            <figure class="hero-carousel__slide" data-carousel-slide data-source="来源：Pexels">
+              <img
+                src="images/banner5.jpg"
+                alt="红色主题横幅照片 5"
+                decoding="async"
+                data-carousel-image
+              />
+            </figure>
+          </div>
+
+          <div class="hero-carousel__overlay" aria-hidden="true"></div>
+
+          <div class="home-banner__grid container">
+            <div class="home-banner__content">
+              <p class="home-banner__eyebrow">循迹·传薪 · 党史学习专题</p>
+              <h1>
+                <span class="home-banner__title-line">让信仰的坐标，</span><br />
+                <span class="home-banner__title-line">照亮前行的方向。</span>
+              </h1>
+              <p class="home-banner__lead">
+                沿着历史脉络回望奋斗历程，在重要事件、革命基地和红色故事中感悟初心使命。
+              </p>
+              <div class="home-banner__actions">
+                <a class="button button--gold" href="red-origin.html">开始学习</a>
+                <a class="button button--ghost" href="timeline.html">查看历史时间轴</a>
+              </div>
+            </div>
+
+            <div class="banner-emblem" aria-hidden="true">
+              <span class="banner-emblem__star">★</span>
+              <span class="banner-emblem__year">1921</span>
+              <span class="banner-emblem__label">循迹·传薪</span>
+              <span class="banner-emblem__line"></span>
+              <span class="banner-emblem__year banner-emblem__year--small">2026</span>
+            </div>
+          </div>
+
+          <div class="home-banner__pager" role="group" aria-label="轮播图片切换">
+            <button class="is-active" type="button" aria-pressed="true" aria-label="显示第 1 张图片" data-carousel-dot>01</button>
+            <button type="button" aria-pressed="false" aria-label="显示第 2 张图片" data-carousel-dot>02</button>
+            <button type="button" aria-pressed="false" aria-label="显示第 3 张图片" data-carousel-dot>03</button>
+            <button type="button" aria-pressed="false" aria-label="显示第 4 张图片" data-carousel-dot>04</button>
+            <button type="button" aria-pressed="false" aria-label="显示第 5 张图片" data-carousel-dot>05</button>
+          </div>
+          <span class="media-source media-source--hero">来源：Pexels</span>
+        </div>
+
+        <div class="headline-strip">
+          <div class="headline-strip__inner container">
+            <span class="headline-strip__label">本站头条</span>
+            <div class="headline-strip__content">
+              <a class="headline-strip__main" href="long-march.html">
+                从长征精神中汲取坚定前行的力量
+              </a>
+              <ul>
+                <li><a href="red-origin.html">红色溯源：从历史深处寻找初心</a></li>
+                <li><a href="timeline.html">沿着时间轴读懂党的奋斗历程</a></li>
+              </ul>
+            </div>
+            <a class="headline-strip__more" href="news.html">头条回顾 →</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="stats-section stats-section--march"
+        id="numbers"
+        data-countup-section
+        aria-labelledby="march-stats-title"
+      >
+        <div class="stats-section__inner container">
+          <div class="stats-section__heading">
+            <p class="eyebrow eyebrow--light">Long March in Numbers</p>
+            <h2 id="march-stats-title">长征数据看板</h2>
+            <p class="stats-section__lead">在数字中感受长征的艰辛与伟大。</p>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-item" aria-label="二万五千里，长征总里程">
+              <span class="stat-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                  <circle cx="6" cy="19" r="2.5"></circle>
+                  <circle cx="18" cy="5" r="2.5"></circle>
+                  <path d="M8.5 19h7.25a3.75 3.75 0 0 0 0-7.5H8.25a3.25 3.25 0 0 1 0-6.5H15"></path>
+                </svg>
+              </span>
+              <strong class="stat-item__value" aria-label="25,000里">
+                <span data-countup="25000" data-countup-number>25,000</span>
+                <span class="stat-item__suffix" aria-hidden="true">里</span>
+              </strong>
+              <span class="stat-item__label">长征总里程</span>
+            </article>
+
+            <article class="stat-item" aria-label="14个途经省份">
+              <span class="stat-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                  <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"></path>
+                  <path d="M9 3v15"></path>
+                  <path d="M15 6v15"></path>
+                </svg>
+              </span>
+              <strong class="stat-item__value" aria-label="14个途经省份">
+                <span data-countup="14" data-countup-number>14</span>
+              </strong>
+              <span class="stat-item__label">途经省份</span>
+            </article>
+
+            <article class="stat-item" aria-label="翻越20多座主要大山">
+              <span class="stat-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                  <path d="m3 20 7-14 4 8 2-3 5 9H3Z"></path>
+                  <path d="m8.5 9.5 1.5 2 1.5-2"></path>
+                </svg>
+              </span>
+              <strong class="stat-item__value" aria-label="20多座主要大山">
+                <span data-countup="20" data-countup-number>20</span>
+                <span class="stat-item__suffix" aria-hidden="true">+</span>
+              </strong>
+              <span class="stat-item__label">翻越主要大山</span>
+            </article>
+
+            <article class="stat-item" aria-label="跨越30多条主要河流">
+              <span class="stat-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                  <path d="M3 8c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path>
+                  <path d="M3 13c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path>
+                  <path d="M3 18c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path>
+                </svg>
+              </span>
+              <strong class="stat-item__value" aria-label="30多条主要河流">
+                <span data-countup="30" data-countup-number>30</span>
+                <span class="stat-item__suffix" aria-hidden="true">+</span>
+              </strong>
+              <span class="stat-item__label">跨越主要河流</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news-board-section" id="news">
+        <div class="container news-board">
+          <section class="news-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">要闻动态</p>
+                <h2>重要学习内容</h2>
+              </div>
+              <a href="news.html">更多 +</a>
+            </div>
+
+            <ul class="news-list">
+              <li>
+                <a href="news.html">
+                  <span class="date-chip"><strong>26</strong><small>2026.09</small></span>
+                  <span>循迹·传薪推出党史专题学习栏目，完善线上线下学习路径</span>
+                </a>
+              </li>
+              <li>
+                <a href="news.html">
+                  <span class="date-chip"><strong>18</strong><small>2026.09</small></span>
+                  <span>红色教育基地学习路线推荐：在行走中感悟历史</span>
+                </a>
+              </li>
+              <li>
+                <a href="news.html">
+                  <span class="date-chip"><strong>10</strong><small>2026.09</small></span>
+                  <span>从革命文物中读懂信仰力量，让红色记忆更加鲜活</span>
+                </a>
+              </li>
+              <li>
+                <a href="news.html">
+                  <span class="date-chip"><strong>02</strong><small>2026.09</small></span>
+                  <span>如何建立清晰完整的党史学习框架</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="news-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">专题聚焦</p>
+                <h2>沿着历史深处阅读</h2>
+              </div>
+              <a href="timeline.html">更多 +</a>
+            </div>
+
+            <ul class="focus-list">
+              <li>
+                <div class="focus-list__meta"><time datetime="2026-09-24">2026.09.24</time><span>红色溯源</span></div>
+                <h3><a class="section-heading-link" href="red-origin.html">中国共产党成立的历史背景与思想准备</a></h3>
+              </li>
+              <li>
+                <div class="focus-list__meta"><time datetime="2026-09-23">2026.09.23</time><span>历史时间轴</span></div>
+                <h3><a class="section-heading-link" href="timeline.html">重要历史节点如何串联成完整脉络</a></h3>
+              </li>
+              <li>
+                <div class="focus-list__meta"><time datetime="2026-09-23">2026.09.23</time><span>长征专题</span></div>
+                <h3><a class="section-heading-link" href="long-march.html">遵义会议：中国革命历史上的伟大转折</a></h3>
+              </li>
+              <li>
+                <div class="focus-list__meta"><time datetime="2026-09-17">2026.09.17</time><span>基地分布</span></div>
+                <h3><a class="section-heading-link" href="bases.html">从上海到延安：红色地标中的奋斗印记</a></h3>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="notice-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">通知公告</p>
+                <h2>学习提示</h2>
+              </div>
+              <a href="news.html">更多 +</a>
+            </div>
+
+            <ul class="notice-list">
+              <li>
+                <time datetime="2026-09-26"><strong>26</strong><span>2026.09</span></time>
+                <a href="news.html">党史学习资料更新与使用说明</a>
+              </li>
+              <li>
+                <time datetime="2026-09-18"><strong>18</strong><span>2026.09</span></time>
+                <a href="bases.html">红色教育基地参观信息核对提示</a>
+              </li>
+              <li>
+                <time datetime="2026-09-10"><strong>10</strong><span>2026.09</span></time>
+                <a href="long-march.html">长征专题内容更新公告</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section learning-section" id="learning">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">学习专栏</p>
+            <h2>从阅读、讲解到专题学习</h2>
+            <p>聚合不同形式的学习内容，让历史知识更易理解、更方便查找。</p>
+          </div>
+
+          <div class="learning-grid">
+            <section class="learning-column">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">学习选文</p>
+                  <h3>重点文章</h3>
+                </div>
+                <a href="news.html">更多 +</a>
+              </div>
+              <ul class="study-list">
+                <li><span>2026.09</span><a href="red-origin.html">中共一大召开的历史意义</a></li>
+                <li><span>2026.08</span><a href="timeline.html">怎样理解党的百年奋斗历程</a></li>
+                <li><span>2026.07</span><a href="long-march.html">长征精神为什么历久弥新</a></li>
+                <li><span>2026.06</span><a href="bases.html">红色教育基地学习路线怎么选</a></li>
+              </ul>
+            </section>
+
+            <section class="learning-column learning-column--feature">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">党史讲堂</p>
+                  <h3>微党课推荐</h3>
+                </div>
+                <a href="long-march.html">更多 +</a>
+              </div>
+              <a class="lecture-visual" href="long-march.html">
+                <span class="lecture-visual__label">党史讲堂</span>
+                <strong>长征途中的<br />伟大转折</strong>
+                <span class="lecture-visual__play" aria-hidden="true">▶</span>
+              </a>
+              <ul class="lecture-list">
+                <li><a href="long-march.html">遵义会议的历史地位与时代启示</a></li>
+                <li><a href="red-origin.html">从建党历程中理解初心使命</a></li>
+                <li><a href="bases.html">走进革命纪念馆，触摸历史温度</a></li>
+              </ul>
+            </section>
+
+            <section class="learning-column">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">特别专栏</p>
+                  <h3>专题学习</h3>
+                </div>
+                <a href="timeline.html">更多 +</a>
+              </div>
+              <ul class="special-list">
+                <li><a href="red-origin.html"><span>红色溯源</span>从历史深处寻找初心</a></li>
+                <li><a href="timeline.html"><span>历史时间轴</span>重要节点与发展阶段</a></li>
+                <li><a href="long-march.html"><span>长征专题</span>跨越艰险的精神远征</a></li>
+                <li><a href="bases.html"><span>基地分布</span>在红色地标中触摸历史</a></li>
+                <li><a href="news.html"><span>红色资讯</span>让历史学习融入日常</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="topics">
+        <div class="container">
+          <div class="section-heading section-heading--row">
+            <div>
+              <p class="eyebrow">专题集锦</p>
+              <h2>沿着不同主题深入阅读</h2>
+            </div>
+            <a class="section-heading__more" href="news.html">更多 +</a>
+          </div>
+
+          <div class="poster-grid">
+            <a class="poster-card poster-card--light" href="red-origin.html">
+              <span class="poster-card__kicker">红色溯源</span>
+              <strong>从历史深处<br />寻找初心</strong>
+              <span class="poster-card__line"></span>
+            </a>
+            <a class="poster-card" href="timeline.html">
+              <span class="poster-card__kicker">历史时间轴</span>
+              <strong>读懂百年<br />奋斗历程</strong>
+              <span class="poster-card__line"></span>
+            </a>
+            <a class="poster-card" href="long-march.html">
+              <span class="poster-card__kicker">长征专题</span>
+              <strong>跨越艰险<br />勇毅前行</strong>
+              <span class="poster-card__line"></span>
+            </a>
+            <a class="poster-card" href="bases.html">
+              <span class="poster-card__kicker">基地分布</span>
+              <strong>在红色地标中<br />触摸历史</strong>
+              <span class="poster-card__line"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container media-grid">
+          <article class="media-card media-card--spirit" id="spirit">
+            <div class="media-card__heading">
+              <h2>长征精神谱系</h2>
+            </div>
+            <div class="spirit-spectrum" aria-label="中国共产党人精神谱系代表">
+              <article class="spirit-card" id="spirit-red-boat">
+                <h3>红船精神</h3>
+                <p>开天辟地、敢为人先，坚定理想、百折不挠</p>
+              </article>
+              <article class="spirit-card" id="spirit-jinggangshan">
+                <h3>井冈山精神</h3>
+                <p>坚定信念、艰苦奋斗，实事求是、敢闯新路</p>
+              </article>
+              <article class="spirit-card" id="spirit-long-march">
+                <h3>长征精神</h3>
+                <p>坚定理想、不怕牺牲，独立自主、团结奋进</p>
+              </article>
+              <article class="spirit-card" id="spirit-yanan">
+                <h3>延安精神</h3>
+                <p>坚定方向、解放思想，实事求是、艰苦奋斗</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__heading">
+              <h2>学习资料</h2>
+              <a href="timeline.html">更多 +</a>
+            </div>
+            <a class="paper-preview" href="timeline.html">
+              <span class="paper-preview__masthead">循迹·传薪</span>
+              <span class="paper-preview__rule"></span>
+              <strong>党史学习资料选编</strong>
+              <span class="paper-preview__text">从重要历史节点出发，建立清晰系统的学习框架。</span>
+            </a>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__heading">
+              <h2>重点推荐</h2>
+              <a href="bases.html">更多 +</a>
+            </div>
+            <a class="recommend-card" href="bases.html">
+              <span class="recommend-card__tag">专题推荐</span>
+              <strong>六大红色教育基地学习路线</strong>
+              <span>从上海、嘉兴到遵义、延安，沿着红色地标回望历史。</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="learning-progress-section"
+        id="learning-progress"
+        aria-labelledby="learning-progress-title"
+        data-learning-progress
+      >
+        <div class="container">
+          <article class="learning-progress-card">
+            <header class="learning-progress-card__header">
+              <div>
+                <p class="eyebrow">My Learning Journey</p>
+                <h2 id="learning-progress-title">我的学习进度</h2>
+              </div>
+              <p class="learning-progress-card__percent">
+                <strong data-learning-progress-value>0%</strong>
+                <span>精神解锁</span>
+              </p>
+            </header>
+
+            <p class="learning-progress-card__summary" aria-live="polite">
+              你已解锁
+              <strong data-learning-progress-inline>0%</strong>
+              的长征精神
+            </p>
+
+            <div
+              class="learning-progress__track"
+              role="progressbar"
+              aria-label="长征精神学习进度"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              aria-valuetext="你已解锁 0% 的长征精神"
+              data-learning-progress-bar
+            >
+              <span class="learning-progress__fill" data-learning-progress-fill></span>
+            </div>
+
+            <div class="learning-progress__weighting" aria-hidden="true">
+              <span>问答 40%</span>
+              <span>地标每站 5%</span>
+              <span>海报 10%</span>
+              <span>徽章 20%</span>
+            </div>
+
+            <ul class="learning-progress__milestones">
+              <li class="learning-progress__milestone" data-learning-progress-quiz>
+                <span class="learning-progress__marker" aria-hidden="true"></span>
+                <span>
+                  <span class="learning-progress__label">党史问答</span>
+                  <strong data-learning-progress-quiz-text>未完成</strong>
+                </span>
+              </li>
+              <li class="learning-progress__milestone" data-learning-progress-map>
+                <span class="learning-progress__marker" aria-hidden="true"></span>
+                <span>
+                  <span class="learning-progress__label">长征地标</span>
+                  <strong data-learning-progress-map-text>尚未点亮</strong>
+                </span>
+              </li>
+              <li class="learning-progress__milestone" data-learning-progress-poster>
+                <span class="learning-progress__marker" aria-hidden="true"></span>
+                <span>
+                  <span class="learning-progress__label">金句海报</span>
+                  <strong data-learning-progress-poster-text>未生成</strong>
+                </span>
+              </li>
+              <li class="learning-progress__milestone" data-learning-progress-badge>
+                <span class="learning-progress__marker" aria-hidden="true"></span>
+                <span>
+                  <span class="learning-progress__label">传承徽章</span>
+                  <strong data-learning-progress-badge-text>未领取</strong>
+                </span>
+              </li>
+            </ul>
+
+            <p class="learning-progress__note">
+              学习足迹保存在当前浏览器中；地图每点亮 1 个不同地标计 5%，最高计 40%。
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__inner container">
+        <div class="footer__intro">
+          <p class="footer__brand">循迹·传薪</p>
+          <p>以清晰的时间脉络和专题内容，提供友好的党史学习与红色文化浏览体验。</p>
+        </div>
+
+        <div>
+          <h2 class="footer__title">栏目导航</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="red-origin.html">红色溯源</a></li>
+            <li><a href="timeline.html">历史时间轴</a></li>
+            <li><a href="long-march.html">长征专题</a></li>
+            <li><a href="bases.html">基地分布</a></li>
+            <li><a href="news.html">红色资讯</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">联系我们</h2>
+          <p>如对内容、图片使用或学习活动有建议，欢迎来信交流。</p>
+          <p><a href="mailto:redhistory@example.com">redhistory@example.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom container">
+        <p>© <span data-current-year>2026</span> 循迹·传薪 · 党史学习主题网站</p>
+        <p>内容目前为学习占位信息，请以权威党史资料为准。</p>
+        <p class="footer__disclaimer">本站部分配图来源于公开网络及官方媒体，仅用于党史学习与本次竞赛评审，非商用，版权归原作者所有。如有冒犯或侵权，请联系删除。</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="回到顶部" data-back-to-top>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m18 15-6-6-6 6"></path>
+      </svg>
+    </button>
+  </body>
+</html>

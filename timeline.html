@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="党史历史时间轴，以重要年份串联党的重大历史事件与发展阶段。" />
+    <title>历史时间轴 | 循迹·传薪</title>
+    <link rel="preload" as="image" href="images/banner2.jpg" type="image/jpeg" fetchpriority="high" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="utility-bar">
+        <div class="utility-bar__inner container">
+          <span>循迹·传薪 · 党史学习资源平台</span>
+          <span class="utility-bar__slogan">学党史 · 悟思想 · 办实事 · 开新局</span>
+        </div>
+      </div>
+
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="index.html" aria-label="循迹·传薪首页">
+          <span class="brand__text">循迹·传薪</span>
+        </a>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">首页</a></li>
+          <li><a class="nav__link" href="red-origin.html">红色溯源</a></li>
+          <li><a class="nav__link" href="timeline.html" aria-current="page">历史时间轴</a></li>
+          <li><a class="nav__link" href="long-march.html">长征专题</a></li>
+          <li><a class="nav__link" href="bases.html">基地分布</a></li>
+          <li><a class="nav__link" href="news.html">红色资讯</a></li>
+        </ul>
+        <div class="search-shell" data-search>
+          <form class="search-form" role="search" data-search-form>
+            <label class="sr-only" for="site-search">搜索党史相关内容</label>
+            <input class="search-input" id="site-search" name="keyword" type="search" placeholder="搜索党史内容" autocomplete="off" />
+            <button class="search-button" type="submit" aria-label="搜索">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="search-results" data-search-results hidden>
+            <p class="search-results__summary" data-search-summary aria-live="polite"></p>
+            <ul class="search-results__list" data-search-list></ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero page-hero--timeline">
+        <div class="page-hero__content container">
+          <ul class="breadcrumbs" aria-label="面包屑">
+            <li><a href="index.html">首页</a></li>
+            <li>历史时间轴</li>
+          </ul>
+          <p class="eyebrow">Historical Timeline</p>
+          <h1>历史时间轴：在重要节点中读懂来路</h1>
+          <p>以时间为经、事件为纬，建立从建党、革命、建设到改革发展的整体历史框架。</p>
+        </div>
+        <span class="media-source media-source--hero">来源：Pexels</span>
+      </section>
+
+      <section
+        class="history-roamer"
+        id="history-roamer"
+        aria-labelledby="history-roamer-title"
+        data-history-roamer
+      >
+        <div class="container">
+          <header class="history-roamer__header">
+            <div>
+              <p class="eyebrow">Interactive History</p>
+              <h2 id="history-roamer-title">交互式历史漫游</h2>
+            </div>
+            <p class="history-roamer__intro">
+              沿着时间坐标穿行百年历程，也可以开启自动漫游，让重要节点依次展开。
+            </p>
+          </header>
+
+          <nav
+            class="history-roamer__years"
+            aria-label="选择历史年份"
+            data-history-years
+          ></nav>
+
+          <article
+            class="history-roamer__card"
+            id="history-roamer-card"
+            aria-labelledby="history-roamer-title"
+            data-history-card
+          >
+            <div class="history-roamer__card-meta">
+              <span class="history-roamer__period" data-history-period>开天辟地 · 国民革命</span>
+              <span class="history-roamer__station" data-history-station>第 1 站 / 共 11 站</span>
+            </div>
+
+            <div class="history-roamer__stage">
+              <div class="history-roamer__year-wrap">
+                <span class="history-roamer__year-display" data-history-year>1921</span>
+                <span class="history-roamer__year-caption">历史坐标</span>
+              </div>
+              <div class="history-roamer__copy">
+                <h3 data-history-title>中国共产党成立</h3>
+                <p data-history-intro>
+                  中国共产党第一次全国代表大会召开，中国革命面貌从此焕然一新。
+                </p>
+              </div>
+            </div>
+
+            <div class="history-roamer__controls">
+              <div class="history-roamer__travel">
+                <button type="button" data-history-prev disabled>
+                  <span aria-hidden="true">&larr;</span>
+                  上一站
+                </button>
+                <button type="button" data-history-next>
+                  下一站
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+
+              <button class="history-roamer__detail" type="button" data-history-detail>
+                查看节点详情
+                <span aria-hidden="true">&darr;</span>
+              </button>
+
+              <button
+                class="history-roamer__auto"
+                type="button"
+                aria-pressed="false"
+                data-history-auto
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" data-history-play-icon>
+                  <path d="m8 5 11 7-11 7V5Z"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" data-history-pause-icon hidden>
+                  <path d="M8 5v14M16 5v14"></path>
+                </svg>
+                <span data-history-auto-label>自动漫游</span>
+              </button>
+            </div>
+
+            <div
+              class="history-roamer__progress"
+              role="progressbar"
+              aria-label="历史漫游节点进度"
+              aria-valuemin="1"
+              aria-valuemax="11"
+              aria-valuenow="1"
+              data-history-progress
+            >
+              <span data-history-progress-fill></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="page-shell">
+        <div class="container page-shell__grid">
+          <aside class="section-sidebar" data-section-nav>
+            <p class="section-sidebar__eyebrow">本页导航</p>
+            <nav class="section-sidebar__nav" aria-label="历史时间轴页内导航">
+              <a class="section-sidebar__link" href="#timeline-1921">1921 建党</a>
+              <a class="section-sidebar__link" href="#timeline-1922">1922 中共二大</a>
+              <a class="section-sidebar__link" href="#timeline-1924">1924 国共合作</a>
+              <a class="section-sidebar__link" href="#timeline-1927-nanchang">1927 南昌起义</a>
+              <a class="section-sidebar__link" href="#timeline-1934">1934 长征开始</a>
+              <a class="section-sidebar__link" href="#timeline-1935">1935 遵义会议</a>
+              <a class="section-sidebar__link" href="#timeline-1936">1936 胜利会师</a>
+              <a class="section-sidebar__link" href="#timeline-1949">1949 新中国成立</a>
+              <a class="section-sidebar__link" href="#timeline-1978">1978 改革开放</a>
+              <a class="section-sidebar__link" href="#timeline-2012">2012 进入新时代</a>
+              <a class="section-sidebar__link" href="#timeline-2021">2021 建党百年</a>
+              <a class="section-sidebar__link" href="#study-guide">学习指引</a>
+            </nav>
+          </aside>
+
+          <div class="page-shell__content">
+            <section class="content-section">
+              <div class="section-heading">
+                <p class="eyebrow">重要节点</p>
+                <h2>一条不断延伸的奋斗之路</h2>
+                <p>当前节点用于展示栏目结构，后续可继续补充图片、文献出处与延伸阅读。</p>
+              </div>
+
+              <div class="timeline">
+                <article class="timeline__item section-anchor" id="timeline-1921">
+                  <time class="timeline__date" datetime="1921">1921</time>
+                  <div class="timeline__content">
+                    <h3>中国共产党成立</h3>
+                    <p>中国共产党第一次全国代表大会召开，中国革命面貌从此焕然一新。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E6%88%90%E7%AB%8B&amp;st=0&amp;_=1792404933297"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1922">
+                  <time class="timeline__date" datetime="1922">1922</time>
+                  <div class="timeline__content">
+                    <h3>中共二大</h3>
+                    <p>党的二大第一次提出明确的反帝反封建民主革命纲领，为中国革命指明了方向。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E4%B8%AD%E5%85%B1%E4%BA%8C%E5%A4%A7&amp;st=0&amp;_=1792064602005"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1924">
+                  <time class="timeline__date" datetime="1924">1924</time>
+                  <div class="timeline__content">
+                    <h3>国共合作</h3>
+                    <p>国民党一大召开，第一次国共合作正式形成，推动了国民革命运动的发展。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E5%9B%BD%E5%85%B1%E5%90%88%E4%BD%9C&amp;st=0&amp;_=1792064670658"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1927-nanchang">
+                  <time class="timeline__date" datetime="1927">1927</time>
+                  <div class="timeline__content">
+                    <h3>南昌起义</h3>
+                    <p>南昌起义打响了武装反抗国民党反动派的第一枪，标志着中国共产党独立领导革命战争、创建人民军队的开端。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E5%8D%97%E6%98%8C%E8%B5%B7%E4%B9%89&amp;st=0&amp;_=1792064728141"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1934">
+                  <time class="timeline__date" datetime="1934">1934</time>
+                  <div class="timeline__content">
+                    <h3>红军长征开始</h3>
+                    <p>中央红军被迫实行战略转移，开启跨越千山万水的伟大征程。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E9%95%BF%E5%BE%81%E5%BC%80%E5%A7%8B&amp;st=0&amp;_=1792064765408"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1935">
+                  <time class="timeline__date" datetime="1935">1935</time>
+                  <div class="timeline__content">
+                    <h3>遵义会议</h3>
+                    <p>遵义会议在极端危急关头挽救了党、挽救了红军、挽救了中国革命。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE&amp;st=0&amp;_=1792064797465"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1936">
+                  <time class="timeline__date" datetime="1936">1936</time>
+                  <div class="timeline__content">
+                    <h3>红军三大主力会师</h3>
+                    <p>红军三大主力先后会师，标志着万里长征胜利结束。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E8%83%9C%E5%88%A9%E4%BC%9A%E5%B8%88&amp;st=0&amp;_=1792064837487"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1949">
+                  <time class="timeline__date" datetime="1949">1949</time>
+                  <div class="timeline__content">
+                    <h3>中华人民共和国成立</h3>
+                    <p>中国人民从此站起来了，中国历史进入新的发展阶段。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E6%96%B0%E4%B8%AD%E5%9B%BD%E6%88%90%E7%AB%8B&amp;st=0&amp;_=1792064869571"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-1978">
+                  <time class="timeline__date" datetime="1978">1978</time>
+                  <div class="timeline__content">
+                    <h3>改革开放</h3>
+                    <p>党的十一届三中全会作出把党和国家工作中心转移到经济建设上来、实行改革开放的历史性决策。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE&amp;st=0&amp;_=1792064904547"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-2012">
+                  <time class="timeline__date" datetime="2012">2012</time>
+                  <div class="timeline__content">
+                    <h3>进入新时代</h3>
+                    <p>中国特色社会主义进入新时代，党和国家事业取得历史性成就、发生历史性变革。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E8%BF%9B%E5%85%A5%E6%96%B0%E6%97%B6%E4%BB%A3&amp;st=0&amp;_=1792064937659"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+                <article class="timeline__item section-anchor" id="timeline-2021">
+                  <time class="timeline__date" datetime="2021">2021</time>
+                  <div class="timeline__content">
+                    <h3>建党百年</h3>
+                    <p>中国共产党成立一百周年，全面建成小康社会，开启全面建设社会主义现代化国家新征程。</p>
+                    <a
+                      class="timeline__more"
+                      href="http://search.people.cn/s?keyword=%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4&amp;st=0&amp;_=1792064968414"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      了解更多
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="content-section section-anchor" id="study-guide">
+              <div class="section-heading">
+                <p class="eyebrow">学习指引</p>
+                <h2>如何按时间轴展开学习</h2>
+              </div>
+              <div class="study-flow">
+                <article class="study-step">
+                  <span class="topic-card__number" aria-hidden="true">01</span>
+                  <h3>先建立框架</h3>
+                  <p>先记住重大历史阶段，再逐步补充人物、会议、文件和事件细节。</p>
+                </article>
+                <span class="study-flow__arrow" aria-hidden="true">→</span>
+                <article class="study-step">
+                  <span class="topic-card__number" aria-hidden="true">02</span>
+                  <h3>再联系背景</h3>
+                  <p>把具体事件放回时代环境中理解，关注事件之间的因果联系。</p>
+                </article>
+                <span class="study-flow__arrow" aria-hidden="true">→</span>
+                <article class="study-step">
+                  <span class="topic-card__number" aria-hidden="true">03</span>
+                  <h3>结合权威资料</h3>
+                  <p>使用党史著作、纪念场馆和官方资料交叉核验，形成准确认识。</p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__inner container">
+        <div class="footer__intro">
+          <p class="footer__brand">循迹·传薪</p>
+          <p>以清晰的时间脉络和专题内容，提供友好的党史学习与红色文化浏览体验。</p>
+        </div>
+        <div>
+          <h2 class="footer__title">栏目导航</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="red-origin.html">红色溯源</a></li>
+            <li><a href="timeline.html">历史时间轴</a></li>
+            <li><a href="long-march.html">长征专题</a></li>
+            <li><a href="bases.html">基地分布</a></li>
+            <li><a href="news.html">红色资讯</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h2 class="footer__title">联系我们</h2>
+          <p>如对内容、图片使用或学习活动有建议，欢迎来信交流。</p>
+          <p><a href="mailto:redhistory@example.com">redhistory@example.com</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p>© <span data-current-year>2026</span> 循迹·传薪 · 党史学习主题网站</p>
+        <p>内容目前为学习占位信息，请以权威党史资料为准。</p>
+        <p class="footer__disclaimer">本站部分配图来源于公开网络及官方媒体，仅用于党史学习与本次竞赛评审，非商用，版权归原作者所有。如有冒犯或侵权，请联系删除。</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="回到顶部" data-back-to-top>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m18 15-6-6-6 6"></path>
+      </svg>
+    </button>
+  </body>
+</html>
